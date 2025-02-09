@@ -73,6 +73,7 @@ def generate_stories(df):
     return stories
 
 
+
 # === Tratamento dos dados antes de chamar a função ===
 df_filtered = df.copy()  # Criar uma cópia dos dados originais
 df_filtered['Data'] = pd.to_datetime(df_filtered['Data'], errors='coerce')  # Garantir que a data está correta
@@ -80,10 +81,6 @@ df_filtered['Data'] = df_filtered['Data'].dt.strftime('%Y-%m-%d')  # Converter p
 
 # Gerando as histórias climáticas
 df_filtered['História Climática'] = generate_stories(df_filtered)
-
-# # Exibindo a tabela interativa com as histórias
-# st.subheader("📅 Tabela de Dados Climáticos por Data e Cidade")
-# st.dataframe(df_filtered[['Data', 'Cidade', 'Temp_Max', 'Temp_Min', 'Precipitacao', 'Condicao', 'História Climática']], use_container_width=True)
 
 
 # === Barra Lateral ===
@@ -139,7 +136,22 @@ data_meaning = '''
 - `Precipitação`: Probabilidade de chuva ou quantidade de precipitação esperada (normalmente em porcentagem % ou milímetros mm).
 '''
 
+# # Seleção de cidades
 
+graphs_form_submitted = True
+cidades_selecionadas = st.multiselect("Selecione as cidades:", df["Cidade"].unique(), default=list(df["Cidade"].unique()))
+df_filtered = df[df["Cidade"].isin(cidades_selecionadas)]
+
+if show_stories:  # Corrigida a verificação
+        
+        # Certificar-se de que `df_filtered` existe antes de usar
+        if 'df_filtered' in locals() and not df_filtered.empty:
+            df_filtered["História Climática"] = generate_stories(df_filtered)  # Chamada correta da função
+        
+            st.subheader("📖 Histórias Climáticas", divider="gray")
+            st.dataframe(df_filtered[['Data', 'Cidade', 'História Climática']], use_container_width=True)  # Exibir apenas as histórias
+        else:
+            st.warning("⚠️ Nenhum dado disponível para gerar histórias.")
 
 # Ao submeter o form de dados tabulares
 if settings_form_submitted:
@@ -155,23 +167,9 @@ if settings_form_submitted:
         st.subheader("Resumo dos Dados", divider="gray")
         st.write(df.describe())
 
-    if show_stories:  # Corrigida a verificação
-        # Certificar-se de que `df_filtered` existe antes de usar
-        if 'df_filtered' in locals() and not df_filtered.empty:
-            df_filtered["História Climática"] = generate_stories(df_filtered)  # Chamada correta da função
-        
-            st.subheader("📖 Histórias Climáticas", divider="gray")
-            st.dataframe(df_filtered[['Data', 'Cidade', 'História Climática']], use_container_width=True)  # Exibir apenas as histórias
-        else:
-            st.warning("⚠️ Nenhum dado disponível para gerar histórias.")
-
 # Ao submeter o form de gráficos
 
-# # Seleção de cidades
 
-graphs_form_submitted = True
-cidades_selecionadas = st.multiselect("Selecione as cidades:", df["Cidade"].unique(), default=list(df["Cidade"].unique()))
-df_filtered = df[df["Cidade"].isin(cidades_selecionadas)]
 
 if graphs_form_submitted:
     if evolucao_temp_max:
