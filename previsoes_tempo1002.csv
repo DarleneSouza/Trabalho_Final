@@ -1,0 +1,51 @@
+Cidade,Data,Dia,Temp_Max,Temp_Min,Condicao,Precipitacao
+Pouso Alegre,2025-02-10,Hoje,30,17,Nuvens passando a períodos de sol,5
+Pouso Alegre,2025-02-11,terça,31,18,Parcialmente soalheiro,3
+Pouso Alegre,2025-02-12,quarta,31,19,Parcialmente soalheiro,25
+Pouso Alegre,2025-02-13,quinta,31,18,Trovoada em partes da zona,40
+Pouso Alegre,2025-02-14,sexta,29,18,Trovoada em partes da zona,40
+Pouso Alegre,2025-02-15,sábado,30,19,Trovoada em partes da zona,40
+Pouso Alegre,2025-02-16,domingo,32,18,Soalheiro,2
+Pouso Alegre,2025-02-17,segunda,32,19,Soalheiro,1
+Pouso Alegre,2025-02-18,terça,32,19,Soalheiro,2
+Pouso Alegre,2025-02-19,quarta,32,18,Maioritariamente com sol,2
+Machado,2025-02-10,Hoje,30,17,Chuvas e trovoadas ocasionais,80
+Machado,2025-02-11,terça,31,18,Parcialmente soalheiro,3
+Machado,2025-02-12,quarta,31,19,Aumento de nebulosidade,25
+Machado,2025-02-13,quinta,31,19,Parcialmente soalheiro,4
+Machado,2025-02-14,sexta,30,19,Trovoada em partes da zona,48
+Machado,2025-02-15,sábado,31,20,Trovoada em partes da zona,40
+Machado,2025-02-16,domingo,32,19,Soalheiro,2
+Machado,2025-02-17,segunda,34,20,Muito sol,1
+Machado,2025-02-18,terça,34,19,Maioritariamente com sol,1
+Machado,2025-02-19,quarta,34,19,Maioritariamente com sol,1
+Alfenas,2025-02-10,Hoje,30,18,Nublado,25
+Alfenas,2025-02-11,terça,31,18,Parcialmente soalheiro,3
+Alfenas,2025-02-12,quarta,32,20,Nuvens e sol,3
+Alfenas,2025-02-13,quinta,31,20,Parcialmente soalheiro,3
+Alfenas,2025-02-14,sexta,31,20,Trovoada em partes da zona,55
+Alfenas,2025-02-15,sábado,32,20,Maioritariamente nublado,9
+Alfenas,2025-02-16,domingo,33,19,Maioritariamente com sol,1
+Alfenas,2025-02-17,segunda,34,20,Soalheiro,1
+Alfenas,2025-02-18,terça,34,19,Maioritariamente com sol,1
+Alfenas,2025-02-19,quarta,35,20,Parcialmente soalheiro,1
+Itajuba,2025-02-10,Hoje,29,16,Trovoada em partes da zona,40
+Itajuba,2025-02-11,terça,30,17,Nuvens e sol,25
+Itajuba,2025-02-12,quarta,30,18,Aguaceiro ou trovoada,41
+Itajuba,2025-02-13,quinta,28,17,Alguns aguaceiros e trovoadas,78
+Itajuba,2025-02-14,sexta,27,17,Trovoada em partes da zona,47
+Itajuba,2025-02-15,sábado,28,17,Trovoada em partes da zona,40
+Itajuba,2025-02-16,domingo,29,16,Maioritariamente com sol,1
+Itajuba,2025-02-17,segunda,30,17,Soalheiro,1
+Itajuba,2025-02-18,terça,30,17,Maioritariamente com sol,1
+Itajuba,2025-02-19,quarta,31,16,Soalheiro a parcialmente nublado,2
+Campinas,2025-02-10,Hoje,32,21,Trovoada em partes da zona,40
+Campinas,2025-02-11,terça,33,21,Parcialmente soalheiro,2
+Campinas,2025-02-12,quarta,32,22,Soalheiro a parcialmente nublado,3
+Campinas,2025-02-13,quinta,33,21,Parcialmente soalheiro,25
+Campinas,2025-02-14,sexta,31,21,Períodos de chuva,78
+Campinas,2025-02-15,sábado,32,22,Algumas trovoadas,65
+Campinas,2025-02-16,domingo,34,22,Maioritariamente com sol,25
+Campinas,2025-02-17,segunda,32,21,Maioritariamente com sol,2
+Campinas,2025-02-18,terça,32,20,Trovoada em partes da zona,40
+Campinas,2025-02-19,quarta,32,21,Trovoada em partes da zona,55
